@@ -8,6 +8,7 @@ const Newsletter = () => {
   const handleClicked = () => {
     if (email) {
       alert(`Subscribed Successfully by ${email}`)
+      setEmail(null);
     } else {
       alert(" Invalid Email ")
     }
